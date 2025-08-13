@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gotty_py.egg-info/PKG-INFO
+gotty_py.egg-info/SOURCES.txt
+gotty_py.egg-info/dependency_links.txt
+gotty_py.egg-info/requires.txt
+gotty_py.egg-info/top_level.txt
+tests/test_gotty_client.py

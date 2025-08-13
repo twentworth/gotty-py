@@ -257,8 +257,17 @@ pip install -e ".[dev]"
 ### Running Tests
 
 ```bash
+# Run unit tests only (safe for CI)
+pytest -m "not integration"
+
+# Run integration tests (requires real gotty server)
+pytest -m "integration"
+
+# Run all tests
 pytest
 ```
+
+**Note:** Integration tests require a real gotty server to be running. These tests are excluded from CI/CD pipelines since they need external infrastructure.
 
 ### Code Formatting
 

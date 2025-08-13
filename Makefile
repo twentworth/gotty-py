@@ -44,7 +44,7 @@ clean: ## Clean build artifacts
 	find . -type f -name "*.pyc" -delete
 
 build: ## Build the package
-	python setup.py sdist bdist_wheel
+	python -m build
 
 publish: ## Publish to PyPI (requires twine)
 	twine upload dist/*
